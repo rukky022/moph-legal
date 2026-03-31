@@ -537,7 +537,33 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.7em 1em;
+  width: 100%;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.7;
+}
+
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
+}nput,
+select,
+textarea {
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: 2px;
@@ -552,9 +578,21 @@ select {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline: none;
   border-color: var(--gold);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.7;
+}
+
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
 }
 
 select {
@@ -703,30 +741,4 @@ select option {
   }
 }
 
-/* ===== TEXTAREA — matches input/select styling ===== */
-textarea {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  padding: 0.7em 1em;
-  width: 100%;
-  resize: vertical;
-  min-height: 130px;
-  line-height: 1.7;
-  transition: border-color 0.2s ease;
-  appearance: none;
-  -webkit-appearance: none;
-}
 
-textarea:focus {
-  outline: none;
-  border-color: var(--gold);
-}
-
-textarea::placeholder {
-  color: var(--muted);
-  opacity: 0.6;
-}
