@@ -36,8 +36,6 @@
 
     <!-- ===== HERO ===== -->
     <section id="hero" class="hero" aria-labelledby="hero-heading">
-      <!-- Photo mode: background image overlay (hidden by default) -->
-      <div class="hero-bg-img" aria-hidden="true"></div>
       <div class="hero-content">
         <img src="images/logo.avif" alt="Moph Legal" class="hero-logo" />
         <h1 id="hero-heading" class="hero-tagline">Real Estate Law. Done Right.</h1>
@@ -54,10 +52,6 @@
         <div class="services-grid">
 
           <article class="service-card" aria-labelledby="svc-1">
-            <div class="card-img" aria-hidden="true">
-              <img src="https://static.wixstatic.com/media/0b071f_aabe2b38d848475d88242d9dc206b084~mv2.png/v1/fill/w_934,h_590,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(3).png"
-                   alt="" loading="lazy" />
-            </div>
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" focusable="false"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
             </div>
@@ -66,10 +60,6 @@
           </article>
 
           <article class="service-card" aria-labelledby="svc-2">
-            <div class="card-img" aria-hidden="true">
-              <img src="https://static.wixstatic.com/media/0b071f_f8c7fe24c994487ab48f2564437d8cc2~mv2.jpg/v1/fill/w_552,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a%20black%20professional%20male%20reviewing%20a%20contract%20review.jpg"
-                   alt="" loading="lazy" />
-            </div>
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" focusable="false"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
             </div>
@@ -78,10 +68,6 @@
           </article>
 
           <article class="service-card" aria-labelledby="svc-3">
-            <div class="card-img" aria-hidden="true">
-              <img src="https://static.wixstatic.com/media/0b071f_5f2f8811b926452785920f934770b338~mv2.jpg/v1/fill/w_934,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/wills%20image_jfif.jpg"
-                   alt="" loading="lazy" />
-            </div>
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" focusable="false"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
             </div>
@@ -90,10 +76,6 @@
           </article>
 
           <article class="service-card" aria-labelledby="svc-4">
-            <div class="card-img" aria-hidden="true">
-              <img src="https://static.wixstatic.com/media/0b071f_052b9261e75b4f5689647ceff5a5f1f2~mv2.jpg/v1/fill/w_934,h_590,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/natoray_jfif.jpg"
-                   alt="" loading="lazy" />
-            </div>
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
@@ -232,9 +214,8 @@
               <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Please briefly describe how we can help you..."></textarea>
             </div>
             <!-- Honeypot: hidden from real users, bots will fill it — submissions with this field populated are rejected -->
-            <div class="hp-field" aria-hidden="true">
-              <label for="hp-website">Website</label>
-              <input type="text" id="hp-website" name="website" tabindex="-1" autocomplete="off" />
+            <div aria-hidden="true" style="display:none">
+              <input type="text" name="website" tabindex="-1" autocomplete="off" />
             </div>
             <button type="submit" class="btn-gold btn-full">Send Message</button>
             <p class="form-disclaimer">
@@ -249,19 +230,6 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer" role="contentinfo">
-
-  <!-- ===== DESIGN PREVIEW TOGGLES (remove before final deploy) ===== -->
-  <div class="preview-toggles" role="group" aria-label="Design preview controls">
-    <span class="preview-label">Preview</span>
-    <button class="toggle-btn" id="theme-toggle" aria-pressed="false" aria-label="Switch to light theme">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      <span>Light</span>
-    </button>
-    <button class="toggle-btn" id="photos-toggle" aria-pressed="false" aria-label="Show photos">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Photos</span>
-    </button>
-  </div>
     <div class="footer-inner">
       <img src="images/logo.avif" alt="Moph Legal" class="footer-logo" />
       <p class="footer-copy">&copy; 2026 Moph Legal. All rights reserved.</p>
